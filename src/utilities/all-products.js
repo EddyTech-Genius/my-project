@@ -1,0 +1,103 @@
+const productImages = [];
+for (let i = 1; i <= 12; i++) {
+  productImages.push(`./product_${i}.jpeg`);
+}
+
+export const all_product = [
+  {
+    id: 1,
+    name: "Product 1",
+    category: "Men",
+    image: productImages[0],
+    new_price: 50.0,
+    old_price: 80.5,
+  },
+  {
+    id: 2,
+    name: "Product 2",
+    category: "Men",
+    image: productImages[1],
+    new_price: 40.0,
+    old_price: 70.0,
+  },
+  {
+    id: 3,
+    name: "Product 3",
+    category: "Men",
+    image: productImages[2],
+    new_price: 60.0,
+    old_price: 90.0,
+  },
+  {
+    id: 4,
+    name: "Product 4",
+    category: "Men",
+    image: productImages[3],
+    new_price: 30.0,
+    old_price: 50.0,
+  },
+  {
+    id: 5,
+    name: "Product 5",
+    category: "Men",
+    image: productImages[4],
+    new_price: 80.0,
+    old_price: 100.0,
+  },
+  {
+    id: 6,
+    name: "Product 6",
+    category: "Women",
+    image: productImages[5],
+    new_price: 55.0,
+    old_price: 85.0,
+  },
+  {
+    id: 7,
+    name: "Product 7",
+    category: "Women",
+    image: productImages[6],
+    new_price: 35.0,
+    old_price: 60.0,
+  },
+  {
+    id: 8,
+    name: "Product 8",
+    category: "Women",
+    image: productImages[7],
+    new_price: 45.0,
+    old_price: 75.0,
+  },
+  {
+    id: 9,
+    name: "Product 9",
+    category: "Women",
+    image: productImages[8],
+    new_price: 70.0,
+    old_price: 95.0,
+  },
+  {
+    id: 10,
+    name: "Product 10",
+    category: "Women",
+    image: productImages[9],
+    new_price: 25.0,
+    old_price: 45.0,
+  },
+  {
+    id: 11,
+    name: "Product 11",
+    category: "Women",
+    image: productImages[10],
+    new_price: 90.0,
+    old_price: 120.0,
+  },
+  {
+    id: 12,
+    name: "Product 12",
+    category: "Women",
+    image: productImages[11],
+    new_price: 65.0,
+    old_price: 85.0,
+  }, 
+];
