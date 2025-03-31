@@ -1,14 +1,9 @@
-
 import "./home.css";
-import "./contact.css"
-import "./service.css"
-import React, {useState} from "react";
-import {all_product, productImages} from "../utilities/all-products"
+import "./contact.css";
+import "./service.css";
+import React from "react";
 
-function Home() {
-  const [products, setProducts] = useState(all_product);
-
-  console.log(products);
+const Home = ({ products }) => {
   return (
     <>
       {" "}
@@ -94,42 +89,15 @@ function Home() {
         </div>
       </aside> --> */}
         <div className="container">
-          <div className="card">
-            <img src="https://via.placeholder.com/150" alt="Card Image" />
-            <h3>Black Jeans</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <button>Read More</button>
-          </div>
-          {/* <div className="card">
-            <img src="https://via.placeholder.com/300" alt="Card Image" />
-            <h3>Card Title 2</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <button>Read More</button>
-          </div>
-          <div className="card">
-            <img src="https://via.placeholder.com/300" alt="Card Image" />
-            <h3>Card Title 3</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <button>Read More</button>
-          </div>
-          <div className="card">
-            <img src="https://via.placeholder.com/300" alt="Card Image" />
-            <h3>Card Title 4</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <button>Read More</button>
-          </div>
-          <div className="card">
-            <img src="https://via.placeholder.com/300" alt="Card Image" />
-            <h3>Card Title 5</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <button>Read More</button>
-          </div>
-          <div className="card">
-            <img src="https://via.placeholder.com/300" alt="Card Image" />
-            <h3>Card Title 6</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <button>Read More</button>
-          </div> */}
+          {products.map((products) => (
+            <div key={products.id} className="card">
+              <img src= {`/Assets/${products.image}`} alt={products.name} />
+              <h3>{products.name}</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <button>Read More</button>
+            </div>
+          ))}
+          <div />
         </div>
       </section>
       <section id="contact">
@@ -141,7 +109,11 @@ function Home() {
             <h2>CONTACT US</h2>
 
             <input placeholder="Your name..." type="text" className="inputs" />
-            <input placeholder="Your email..." type="email" className="inputs" />
+            <input
+              placeholder="Your email..."
+              type="email"
+              className="inputs"
+            />
             <textarea
               placeholder="Your message..."
               className="inputs"
