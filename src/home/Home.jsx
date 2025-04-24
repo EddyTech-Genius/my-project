@@ -46,52 +46,13 @@ const Home = ({ products }) => {
         <button className="intro__button">Let's Start</button>
       </section>
       <section id="services">
-        {/* <!-- <aside> --> */}
-        {/* <!-- <div className="side__gaming">
-          <h2>Gaming Accessories</h2>
-          <p>Headset</p>
-          <p>Oculus</p>
-          <p>Laptops</p>
-          <p>Mouse</p>
-          <p>Keyboard</p>
-          <p>Consoles</p>
-
-          <h2>Clothes</h2>
-          <p>Trousers</p>
-          <p>Skirt</p>
-          <p>T-Shirts</p>
-          <p>Shoes</p>
-          <p>Coats</p>
-          <p>Bags</p>
-
-          <h2>Gym</h2>
-          <p>Treadmill</p>
-          <p>Dumbbells</p>
-          <p>Jump Rope</p>
-
-          <h2>Sports</h2>
-          <p>Football</p>
-          <p>Football Boots</p>
-          <p>Basketball</p>
-          <p>Gloves</p>
-          <p>Tennis</p>
-          <p>Socks</p>
-
-          <h2>Electronics</h2>
-          <p>Fridge</p>
-          <p>Mobile Phones</p>
-          <p>AirPods</p>
-          <p>Blenders</p>
-          <p>Microwaves</p>
-          <p>Television</p>
-
-          <button className="back-home">Go Back Home</button>
+        <div className="service-title">
+          <h1>Latest Products</h1>
         </div>
-      </aside> --> */}
         <div className="container">
           {products.map((products) => (
             <div key={products.id} className="card">
-              <img src= {`/Assets/${products.image}`} alt={products.name} />
+              <img src={`/assets/${products.image}`} alt={products.name} />
               <h3>{products.name}</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <button>Read More</button>
@@ -103,7 +64,7 @@ const Home = ({ products }) => {
       <section id="contact">
         <div className="contact__container">
           <div className="img__contact">
-            <img src="/Assets/contact-image.png" alt="" />
+            <img src="/assets/contact-image.png" alt="" />
           </div>
           <div className="contact__text">
             <h2>CONTACT US</h2>
