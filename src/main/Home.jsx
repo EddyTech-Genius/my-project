@@ -1,7 +1,8 @@
-import "./home.css";
-import "./contact.css";
-import "./service.css";
 import React from "react";
+import "./styles/home.css";
+import "./styles/contact.css";
+import "./styles/service.css";
+import { Link } from 'react-router-dom';
 
 const Home = ({ products }) => {
   return (
@@ -53,9 +54,11 @@ const Home = ({ products }) => {
           {products.map((products) => (
             <div key={products.id} className="card">
               <img src={`/assets/${products.image}`} alt={products.name} />
+              <Link to={`/product/${products.id}`}>
               <h3>{products.name}</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <button>Read More</button>
+              </Link>
             </div>
           ))}
           <div />
