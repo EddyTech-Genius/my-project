@@ -1,0 +1,10 @@
+.filter-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    button{
+        padding: 12px 30px;
+        margin: 20px 0 0 0;
+    }
+}

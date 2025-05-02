@@ -2,9 +2,10 @@ import React from "react";
 import "./styles/home.css";
 import "./styles/contact.css";
 import "./styles/service.css";
-import { Link } from "react-router-dom";
+import ProductList from "./ProductList";
 
 const Home = ({ products }) => {
+  console.log("Products passed to home", products)
   return (
     <>
       {" "}
@@ -50,13 +51,15 @@ const Home = ({ products }) => {
         {/* <div className="service-title">
           <h1>Latest Products</h1>
         </div> */}
-        <div className="container">
+        {/* <div className="container">
           {products.map((products) => (
             <div key={products.id} className="card">
               <img src={`/assets/${products.image}`} alt={products.name} />
               <h3>{products.name}</h3>
               <div className="prices">
-                <strike style={{ color: "red" }}>${products.price + Math.floor(Math.random() * 50)}</strike>
+                <strike style={{ color: "red" }}>
+                  ${products.price + Math.floor(Math.random() * 50)}
+                </strike>
                 <p>${products.price}</p>
               </div>
               <Link to={`/product/${products.id}`}>
@@ -66,7 +69,8 @@ const Home = ({ products }) => {
             </div>
           ))}
           <div />
-        </div>
+        </div> */}
+        <ProductList products={products} />
       </section>
       <section id="contact">
         <div className="contact__container">

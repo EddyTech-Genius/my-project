@@ -7,7 +7,7 @@ export const all_product = [
   {
     id: 1,
     name: "Cotton Crewneck Tee",
-    category: "Men",
+    category: "Women",
     image: productImages[0],
     price: 50.0,
     description: "A comfortable and breathable cotton t-shirt designed for all-day wear. Its minimalist crewneck design makes it an everyday essential, perfect for layering or wearing on its own.",
@@ -23,7 +23,7 @@ export const all_product = [
   {
     id: 3,
     name: "Classic Gray Hoodie",
-    category: "Men",
+    category: "Women",
     image: productImages[2],
     price: 60.0,
     description: "A timeless gray hoodie made with soft fleece material. Designed to keep you warm on chilly days, it features a relaxed fit and spacious front pocket for convenience.",
@@ -31,7 +31,7 @@ export const all_product = [
   {
     id: 4,
     name: "Casual Shorts",
-    category: "Men",
+    category: "Women",
     image: productImages[3],
     price: 30.0,
     description: "Lightweight and airy, these summer shorts are made from breathable cotton. Great for beach days or backyard lounging, they offer maximum comfort and mobility.",
@@ -71,7 +71,7 @@ export const all_product = [
   {
     id: 9,
     name: "Tailored Blazer",
-    category: "Women",
+    category: "Men",
     image: productImages[8],
     price: 70.0,
     description: "A versatile tailored blazer designed for a sharp and polished look. Wear it to work or on a night out—its sleek cut and structured shoulders make a strong statement.",
@@ -119,7 +119,7 @@ export const all_product = [
   {
     id: 15,
     name: "Sunshine Maxi Dress",
-    category: "Women",
+    category: "Men",
     image: productImages[14],
     price: 55.0,
     description: "Feel radiant in this sunshine maxi dress, featuring a flowy skirt and floral accents. It's a perfect choice for brunches, park strolls, or summer parties.",
@@ -127,7 +127,7 @@ export const all_product = [
   {
     id: 16,
     name: "Retro Fit Jeans",
-    category: "Women",
+    category: "Men",
     image: productImages[15],
     price: 35.0,
     description: "Bring back vintage vibes with these retro-inspired high-waisted jeans. Their unique wash and snug fit make them a standout piece for any casual wardrobe.",
@@ -135,7 +135,7 @@ export const all_product = [
   {
     id: 17,
     name: "Chunky Wool Sweater",
-    category: "Women",
+    category: "Shoes",
     image: productImages[16],
     price: 45.0,
     description: "Keep warm in style with this chunky wool sweater. Its oversized look and plush texture make it your go-to for cozy evenings and laid-back weekends.",
@@ -143,7 +143,7 @@ export const all_product = [
   {
     id: 18,
     name: "Double-Breasted Blazer",
-    category: "Women",
+    category: "Shoes",
     image: productImages[17],
     price: 70.0,
     description: "A bold and chic double-breasted blazer that combines structure with style. Great for elevating casual outfits or completing a smart office look.",
@@ -151,7 +151,7 @@ export const all_product = [
   {
     id: 19,
     name: "Sporty Crop Tank",
-    category: "Women",
+    category: "Shoes",
     image: productImages[18],
     price: 25.0,
     description: "This cropped tank offers style and comfort for your workouts. With a snug fit and breathable fabric, it supports your active lifestyle in all the right ways.",
@@ -159,7 +159,7 @@ export const all_product = [
   {
     id: 20,
     name: "Silk Evening Dress",
-    category: "Women",
+    category: "Shoes",
     image: productImages[19],
     price: 90.0,
     description: "Make a lasting impression with this luxurious silk evening dress. Its graceful flow and delicate detailing make it a perfect pick for weddings and gala events.",
@@ -167,7 +167,7 @@ export const all_product = [
   {
     id: 21,
     name: "Wool Knit Cardigan",
-    category: "Women",
+    category: "Shoes",
     image: productImages[20],
     price: 65.0,
     description: "Stay cozy and chic in this wool knit cardigan. Its neutral palette and comfortable fit make it ideal for layering throughout the year.",
