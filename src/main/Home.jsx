@@ -5,7 +5,6 @@ import "./styles/service.css";
 import ProductList from "./ProductList";
 
 const Home = ({ products }) => {
-  console.log("Products passed to home", products)
   return (
     <>
       {" "}

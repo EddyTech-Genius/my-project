@@ -29,15 +29,15 @@ const ProductList = ({products}) => {
               <img src={`/assets/${product.image}`} alt={product.name} />
               <h3>{product.name}</h3>
               <div className="prices">
-                <strike style={{ color: "red" }}>
+                {/* <strike style={{ color: "red" }}>
                   ${product.price + Math.floor(Math.random() * 50)}
-                </strike>
+                </strike> */}
                 <p>${product.price}</p>
               </div>
-              <Link to={`/product/${product.id}`}>
+              <Link style={{ textDecoration: 'none' }} to={`/product/${product.id}`}>
                 <p className="read_more">Read More</p>
               </Link>
-              <p className="buy">Buy Now</p>
+              <p className="buy">Add To Cart</p>
             </div>
           ))}
       </div>

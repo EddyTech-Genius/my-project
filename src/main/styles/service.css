@@ -40,8 +40,8 @@
 
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 5fr));
-  padding: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 5fr));
+  padding: 5rem 15rem 0 15rem;
   place-content: center;
   gap: 25px;
 }
@@ -50,7 +50,7 @@
   margin: 0 auto;
   background: white;
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
   width: 210px;
   text-align: center;
   transition: transform 0.3s;
@@ -62,18 +62,27 @@
 }
 .card img {
   width: 100%;
-  height: 70%;
+  height: 50%;
   border-radius: 10px ;
 }
 .card h3 {
   margin: 15px 0;
 }
 .card .read_more {
-  font-size: 14px;
-  margin: 0 0 5px 100px;
+  font-size: 15px;
+  margin: 0 0 10px 100px;
+  color: #7772c5;
 }
-.card button:hover {
+
+.card .read_more:hover{
+  color: #6c67b3;
+  font-weight: bold;
+}
+
+.card .buy:hover {
   background: #7772c5;
+  color: white;
+  transition: 0.3s;
 }
 
 .prices{
@@ -85,9 +94,10 @@
 
 .buy{
   padding: 8px;
-  border: none;
-  background: #7772c5;
-  color: white;
+  border: 2px solid #7772c5;
+  border-radius: 25px;
+  background: #ffff;
+  color: #7772c5;
   cursor: pointer;
 }
 
