@@ -2,7 +2,7 @@ import React from "react";
 import "./styles/home.css";
 import "./styles/contact.css";
 import "./styles/service.css";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Home = ({ products }) => {
   return (
@@ -47,18 +47,22 @@ const Home = ({ products }) => {
         <button className="intro__button">Let's Start</button>
       </section>
       <section id="services">
-        <div className="service-title">
+        {/* <div className="service-title">
           <h1>Latest Products</h1>
-        </div>
+        </div> */}
         <div className="container">
           {products.map((products) => (
             <div key={products.id} className="card">
               <img src={`/assets/${products.image}`} alt={products.name} />
-              <Link to={`/product/${products.id}`}>
               <h3>{products.name}</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <button>Read More</button>
+              <div className="prices">
+                <strike style={{ color: "red" }}>${products.price + Math.floor(Math.random() * 50)}</strike>
+                <p>${products.price}</p>
+              </div>
+              <Link to={`/product/${products.id}`}>
+                <p className="read_more">Read More</p>
               </Link>
+              <p className="buy">Buy Now</p>
             </div>
           ))}
           <div />

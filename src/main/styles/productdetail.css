@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    img{
+        width: 500px;
+    }
+}
+
+.product-des{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    h2{
+        position: absolute;
+        top: 10px;
+    }
+    .stars{
+        position: absolute;
+        top: 35px;
+        left: 0;
+    }
+}
+
+.product-detail{
+    display: flex;
+}
