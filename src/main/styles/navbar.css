@@ -1,0 +1,18 @@
+nav ul {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    z-index: 2;
+    background-color: white;
+    li a {
+      text-decoration: none;
+      color: #7772c5;
+    }
+  }

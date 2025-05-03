@@ -37,7 +37,7 @@ const ProductList = ({products}) => {
               <Link style={{ textDecoration: 'none' }} to={`/product/${product.id}`}>
                 <p className="read_more">Read More</p>
               </Link>
-              <p className="buy">Add To Cart</p>
+              <p className="to_cart">Add To Cart</p>
             </div>
           ))}
       </div>

@@ -17,7 +17,9 @@ body{
     justify-content: center;
     flex-direction: column;
     img{
-        width: 500px;
+        width: 400px;
+        margin: 0 25px 0 0;
+        border-radius: 10px;
     }
 }
 
@@ -35,8 +37,71 @@ body{
         top: 35px;
         left: 0;
     }
+    .detail_price{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        font-size: 25px;
+    }
+}
+
+label{
+    margin: 40px 0 0 0;
+    font-weight: bold;
+}
+
+.des{
+    max-width: 250px;
+    margin: 10px 0 0 0;
+    font-size: 13.5px;
+    color: grey;
+}
+
+.detail_buy{
+    padding: 8px;
+    border: 2px solid #7772c5;
+    border-radius: 25px;
+    background: #ffff;
+    color: #7772c5;
+    cursor: pointer;
+    margin: 20px 0 10px 0;
+}
+
+.detail_to_cart{
+    padding: 8px;
+    border: 2px solid #7772c5;
+    border-radius: 25px;
+    background: #ffff;
+    color: #7772c5;
+    cursor: pointer;
 }
 
 .product-detail{
     display: flex;
+}
+
+.button_sizes_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 100px 0 0 0;
+    width: 250px;
+}
+
+.size_buttons{
+    padding: 16px;
+    border: 2px solid #7772c5;
+    border-radius: 20px;
+    background: #ffff;
+    color: #7772c5;
+    cursor: pointer;
+}
+
+
+:is(.size_buttons, .detail_buy, .detail_to_cart):hover{
+    border: 2px solid #7772c5;
+    background: #7772c5;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
 }
