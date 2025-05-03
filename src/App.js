@@ -4,6 +4,7 @@ import "./App.css";
 import Home from './main/Home';
 import ProductDetail from './main/ProductDetail';
 import Navbar from './component/Navbar'
+import Contact from './pages/Contact'
 import {all_product} from "./utilities/all-products"
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
        <Routes>
         <Route path="/" element={<Home products={all_product}/>} />
         <Route path="/product/:id" element={<ProductDetail products={all_product}/>} />
+        <Route path="/contact" element={<Contact/>}></Route>
        </Routes>
     </Router>
   </div>
