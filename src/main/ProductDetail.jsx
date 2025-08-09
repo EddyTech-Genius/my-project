@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import "./styles/productdetail.css";
 
-function ProductDetail({ products }) {
+function ProductDetail({ products, addToCart}) {
   const { id } = useParams();
 
   if (!products || products.length === 0) {
@@ -45,7 +45,7 @@ function ProductDetail({ products }) {
         </div>
 
         <button className="detail_buy">Buy Now</button>
-        <button className="detail_to_cart">Add To Cart</button>
+        <button className="detail_to_cart" onClick={() => addToCart(product)}>Add To Cart</button>
 
         <label htmlFor="">Description</label>
         <p className="des">{product.description}</p>

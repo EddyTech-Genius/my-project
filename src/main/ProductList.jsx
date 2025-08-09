@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./styles/productlist.css"
 
-const ProductList = ({products}) => {
+const ProductList = ({products, addToCart}) => {
   const [filteredProducts, setFilteredProducts] = useState(products);
 
   const handleFilter = (category) => {
@@ -37,7 +37,7 @@ const ProductList = ({products}) => {
               <Link style={{ textDecoration: 'none' }} to={`/product/${product.id}`}>
                 <p className="read_more">Read More</p>
               </Link>
-              <p className="to_cart">Add To Cart</p>
+              <p className="to_cart" onClick={() => addToCart(product)}>Add To Cart</p>
             </div>
           ))}
       </div>

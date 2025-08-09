@@ -97,8 +97,16 @@ label{
     cursor: pointer;
 }
 
+.size_buttons:focus{
+    border: 2px solid #7772c5;
+    background: #7772c5;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+}
 
-:is(.size_buttons, .detail_buy, .detail_to_cart):hover{
+
+:is(.detail_buy, .detail_to_cart):hover{
     border: 2px solid #7772c5;
     background: #7772c5;
     color: #fff;

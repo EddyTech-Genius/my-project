@@ -4,7 +4,7 @@ import "./styles/contact.css";
 import "./styles/service.css";
 import ProductList from "./ProductList";
 
-const Home = ({ products }) => {
+const Home = ({ products, addToCart }) => {
   return (
     <>
       <section id="home">
@@ -39,7 +39,7 @@ const Home = ({ products }) => {
           ))}
           <div />
         </div> */}
-        <ProductList products={products} />
+        <ProductList products={products} addToCart={addToCart} />
       </section>
     </>
   );

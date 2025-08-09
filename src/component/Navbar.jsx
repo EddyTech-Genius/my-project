@@ -29,6 +29,11 @@ const Navbar = () => {
                 <a href="">Sign up</a>
               </li>
             </button>
+            <li>
+            <Link to="/cart">
+              <i className="fa-solid fa-cart-shopping"></i> Cart
+            </Link>
+          </li>
           </ul>
         </nav>
     </div>
