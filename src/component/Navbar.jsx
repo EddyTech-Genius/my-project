@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import "../main/styles/navbar.css"
 
-const Navbar = () => {
+const Navbar = ({cartItems}) => {
   return (
     <div>
       <nav>
@@ -31,7 +31,7 @@ const Navbar = () => {
             </button>
             <li>
             <Link to="/cart">
-              <i className="fa-solid fa-cart-shopping"></i> Cart
+              <i className="fa-solid fa-cart-shopping"></i> Cart <p>{cartItems.length}</p>
             </Link>
           </li>
           </ul>

@@ -19,7 +19,7 @@ function App() {
   return (
     <div>
       <Router>
-        <Navbar />
+        <Navbar cartItems={cartItems}/>
         <Routes>
           <Route
             path="/"
