@@ -11,8 +11,29 @@ nav ul {
     gap: 20px;
     z-index: 2;
     background-color: white;
-    li a {
+    a {
       text-decoration: none;
       color: #7772c5;
     }
   }
+
+.cart {
+    position: relative;
+    display: inline-block;
+    i{
+        font-size: 24px;
+        color: #7772c5;
+        cursor: pointer;
+    }
+}   
+
+.cart__quantity {
+    position: absolute;
+    top: -10px;
+    right: -20px;
+    background-color: #7772c5;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-size: 12px;
+}

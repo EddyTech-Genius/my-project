@@ -30,8 +30,8 @@ const Navbar = ({cartItems}) => {
               </li>
             </button>
             <li>
-            <Link to="/cart">
-              <i className="fa-solid fa-cart-shopping"></i> Cart <p>{cartItems.length}</p>
+            <Link to="/cart" className='cart'>
+              <i className="fa-solid fa-cart-shopping"></i><p className='cart__quantity'>{cartItems.length}</p>
             </Link>
           </li>
           </ul>

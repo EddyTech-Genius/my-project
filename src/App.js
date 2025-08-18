@@ -15,7 +15,7 @@ function App() {
   const addToCart = (product) => {
     setCartItems((prev) => [...prev, product]);
   };
-
+  
   return (
     <div>
       <Router>
