@@ -1,0 +1,53 @@
+.cart__wrapper{
+    display: flex;
+    gap: 40px;
+}
+
+.cart__image{
+    height: 150px;
+    aspect-ratio: 1;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.cart__des{
+    font-size: 20;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    button{
+        width: 20px;
+        border: none;
+        font-size: 16;
+    }
+    .count{
+        margin: 10px;
+        font-size: 16;
+    }
+    :is(button, .count){
+        margin-top: 30px;
+    }
+}
+
+.cart__item{
+      border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+    display: flex;
+    width: 600px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.blocker{
+    margin-top: 80px;
+    margin-bottom: 5px;
+    opacity: 0;
+}
+
+.total__div{
+    width: 320px;
+  display: flex; 
+   
+}

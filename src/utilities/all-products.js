@@ -193,5 +193,5 @@ export const all_product = [
     description: "These wool knit slides are cozy and convenient. Slip them on for instant comfort wherever you go.",
     sizes: [6, 7, 8, 9, 10, 11],
   },
-];
+]   ;
 

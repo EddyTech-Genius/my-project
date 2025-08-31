@@ -113,6 +113,7 @@ input[type="search"]:focus {
   background-color: #a09ebb;
   padding: 15px;
   width: 100px;
+  text-align: center;
   li a {
     font-family: "Inter", sans-serif;
     color: white;

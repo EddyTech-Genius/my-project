@@ -14,6 +14,10 @@ const ProductList = ({products, addToCart}) => {
     }
   };
 
+  const handleAddToCart = () => {
+    alert('Item added to cart!');
+  };
+
   return (
     <div>
       <div className="filter-buttons">
@@ -37,7 +41,7 @@ const ProductList = ({products, addToCart}) => {
               <Link style={{ textDecoration: 'none' }} to={`/product/${product.id}`}>
                 <p className="read_more">Read More</p>
               </Link>
-              <p className="to_cart" onClick={() => addToCart(product)}>Add To Cart</p>
+              <p className="to_cart" onClick={() => {addToCart(product); handleAddToCart(product)}}>Add To Cart</p>
             </div>
           ))}
       </div>

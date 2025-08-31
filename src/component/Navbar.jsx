@@ -1,43 +1,42 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-import "../main/styles/navbar.css"
+import React from 'react';
+import { Link } from 'react-router-dom';
+import "../main/styles/navbar.css";
 
-const Navbar = ({cartItems}) => {
+const Navbar = ({ cartItems }) => {
   return (
-    <div>
+    <div className='navbar'>
       <nav>
-          <ul>
-            <Link to={'/'}>
-              Home
-            </Link>
-            <Link to={'/contact'}>
-              <a href="">Contact</a>
-            </Link>
+        <ul>
+          <li>
+            <Link to={'/'}>Home</Link>
+          </li>
+          <li>
+            <Link to={'/contact'}>Contact</Link>
+          </li>
 
-            <div className="input__container">
-              <input type="search" placeholder="Search" />
-              <i className="fa-solid fa-magnifying-glass"></i>
-            </div>
+          <div className="input__container">
+            <input type="search" placeholder="Search" />
+            <i className="fa-solid fa-magnifying-glass"></i>
+          </div>
 
-            <span>|</span>
+          <span>|</span>
 
-            <li className="sign__in">
-              <a href="">Sign in</a>
-            </li>
-            <button className="sign__up">
-              <li>
-                <a href="">Sign up</a>
-              </li>
-            </button>
-            <li>
+          <li className="sign__in">
+            <Link to="/signin">Sign in</Link>
+          </li>
+          <li className="sign__up">
+            <Link to="/signup">Sign up</Link>
+          </li>
+          <li>
             <Link to="/cart" className='cart'>
-              <i className="fa-solid fa-cart-shopping"></i><p className='cart__quantity'>{cartItems.length}</p>
+              <i className="fa-solid fa-cart-shopping"></i>
+              <p className='cart__quantity'>{cartItems.length}</p>
             </Link>
           </li>
-          </ul>
-        </nav>
+        </ul>
+      </nav>
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

@@ -3,8 +3,20 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
-    button{
-        padding: 12px 30px;
-        margin: 20px 0 0 0;
+    button {
+        margin-top: 30px;
+        padding: 10px 20px;
+        border: 1px solid #7772c5;
+        border-radius: 5px;
+        background-color: white;
+        color: #7772c5;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    button:hover {
+        background-color: white;
+        color: #453fa0;
+        border: 1.5px solid #453fa0;
     }
 }

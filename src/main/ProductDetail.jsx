@@ -12,6 +12,10 @@ function ProductDetail({ products, addToCart}) {
 
   if (!product) return <p>Product not found.</p>;
 
+    const handleAddToCart = () => {
+    alert('Item added to cart!');
+  };
+
   return (
     <div className="product-detail">
       <div className="product-main">
@@ -21,7 +25,7 @@ function ProductDetail({ products, addToCart}) {
         />
       </div>
       <div className="product-des">
-        <h2>{product.name}</h2>
+        <h3>{product.name}</h3>
         <p className="stars">5.0⭐️⭐️⭐️⭐️⭐️</p>
 
         <p className="detail_price">USD  ${product.price}</p>
@@ -45,7 +49,7 @@ function ProductDetail({ products, addToCart}) {
         </div>
 
         <button className="detail_buy">Buy Now</button>
-        <button className="detail_to_cart" onClick={() => addToCart(product)}>Add To Cart</button>
+        <button className="detail_to_cart" onClick={() => {addToCart(product); handleAddToCart(product)}}>Add To Cart</button>
 
         <label htmlFor="">Description</label>
         <p className="des">{product.description}</p>
