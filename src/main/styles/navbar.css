@@ -13,6 +13,7 @@ nav ul {
   background-color: white;
   a {
     text-decoration: none;
+    color: #7772c5;
   }
 }
 
@@ -22,12 +23,8 @@ nav ul {
   padding: 15px;
   width: 100px;
   text-align: center;
-  li {
-    color: white;
-    a {
       font-family: "Inter", sans-serif;
-    }
-  }
+      color: white;
 }
 
 .sign__in {

@@ -9,22 +9,35 @@ function Cart({ cartItems }) {
   return (
     <>
       <hr className="blocker"></hr>
+      <h2 className="cart__heading">SHOPPING CART</h2>
       <div className="cart__wrapper">
         <div>
           {cartItems.length === 0 ? (
             // In a button
-            <button disabled style={{ position: "relative", paddingLeft: 36 }}>
+            <button
+              disabled
+              style={{
+                fontStyle: "italic",
+                position: "relative",
+                paddingLeft: -100,
+                paddingTop: 200,
+                border: "none",
+                backgroundColor: "white",
+                fontWeight: "bold",
+                fontSize: 18,
+              }}
+            >
               <span>No items in cart yet...</span>
               <span
                 style={{
                   position: "absolute",
-                  left: 10,
+                  left: 50,
                   top: "50%",
-                  transform: "translateY(-50%)",
+                  transform: "translateY(-10%)",
                   color: "#6c5ce7",
                 }}
               >
-                <SpinnerSVG size={28} stroke={3} />
+                <SpinnerSVG size={60} stroke={3} />
               </span>
             </button>
           ) : (
@@ -69,8 +82,9 @@ function Cart({ cartItems }) {
           </div>
           <div className="total">
             <p>TOTAL</p>
-            <p>{total + Math.floor(0.073 * total)}</p>
+            <strong>${total + Math.floor(0.073 * total)}</strong>
           </div>
+          <button className="checkout">CHECKOUT</button>
         </div>
       </div>
     </>
