@@ -1,6 +1,6 @@
 .cart__wrapper{
     display: flex;
-    gap: 40px;
+    gap: 100px;
 }
 
 .cart__image{
@@ -46,8 +46,23 @@
     opacity: 0;
 }
 
-.total__div{
+.summary{
+    gap: 15px;
     width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    padding: 20px;
+    color:  #7772c5;
+    height: 120px;
+    margin-bottom: 500px;
+}
+
+:is(.total, .subtotal, .shipping){
+    font-size: 14px;
+    font-weight: 500;
+    width: 95%;
   display: flex; 
-   
+   justify-content: space-between;
 }

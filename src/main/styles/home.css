@@ -1,10 +1,10 @@
 body {
-  /* background-color: #A09EBB
+  /*background-color: #A09EBB
       #A8AEC1
       #B5D2CB
       #BFFFBc
       #A6FFA1
-      #FFFFFF; */
+      #FFFFFF;*/
   display: block;
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
@@ -106,22 +106,4 @@ input[type="search"]:focus {
   top: 50%;
   transform: translateY(-50%);
   color: gray;
-}
-
-.sign__up {
-  border: none;
-  background-color: #a09ebb;
-  padding: 15px;
-  width: 100px;
-  text-align: center;
-  li a {
-    font-family: "Inter", sans-serif;
-    color: white;
-  }
-}
-
-.sign__in {
-  padding: 8px;
-  border: 2px solid #a09ebb;
-  margin: 0 0 0 100px;
 }
