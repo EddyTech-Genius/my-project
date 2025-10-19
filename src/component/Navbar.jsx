@@ -22,10 +22,10 @@ const Navbar = ({ cartItems }) => {
           <span>|</span>
 
           <li className="sign__in">
-            <Link style={{color: "#7772c5"}} to="/signin">Sign in</Link>
+            <Link style={{color: "#7772c5"}} to={"/Signin"}>Sign in</Link>
           </li>
           <li className="sign__up">
-            <Link style={{color: "#fff"}} to="/signup">Sign up</Link>
+            <Link style={{color: "#fff"}} to={"/Signup"}>Sign up</Link>
           </li>
           <li>
             <Link to="/cart" className='cart'>

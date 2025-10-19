@@ -27,7 +27,7 @@ function Cart({ cartItems }) {
                 fontSize: 18,
               }}
             >
-              <span>No items in cart yet...</span>
+              <span>No items in cart...</span>
               <span
                 style={{
                   position: "absolute",
