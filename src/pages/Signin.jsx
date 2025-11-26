@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "../main/styles/signin.css";
 
 const Signin = () => {
   return (
@@ -26,17 +28,28 @@ const Signin = () => {
         />
         <br />
         <br />
+        <input
+          class="password"
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Your Password"
+        />
+        <br />
+        <br />
         <button>Submit query</button>
         <br />
         <br />
         <input type="checkbox" id="checkbox1" name="checkbox1" />
         <label>
           I agree to the
-          <Link class="blue" to="">
+          <span>  </span>
+          <a class="blue" to="">
             terms & conditions
-          </Link>
+            <span>  </span>
+          </a>
         </label>
-        <Link to="">Sign up</Link>
+        <Link to={"/signup"} style={{color: "#7772c5"}}>Sign up</Link>
       </form>
     </div>
   );

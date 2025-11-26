@@ -1,136 +1,120 @@
-*{
-    margin: 0;
-    box-sizing: border-box;
-}
-
-h1{
-    font-size: 35px;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
-    color: rgba(233, 222, 222, 0.897);
-    margin-bottom: 10px;
-}
-
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-img{
-    width: 400px;
-    aspect-ratio: 1;
-}
-
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-    /* height: 501px; */
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-.inputs{
-    display: grid;
-    place-content: center;
-    gap: 10px;
-    margin: 5px;
-}
-
-input{
-    padding: 12px;
-    width: 300px;
-    border-radius: 2px;
-    border: none;
-    box-shadow: none;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-
-/* input:focus & input:active{
-    border: none;
-    color: white;
+/* ===== GENERAL PAGE LAYOUT ===== */
+/* body {
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f5f7fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 } */
 
-button:hover{
-    cursor: pointer;
-    color: white;
-    background-color: #6e55b9;
-    transition: ease-in-out 1s;
+/* ===== MAIN CONTAINER ===== */
+.sign_up_container {
+  width: 520px;
+  background: #ffffff;
+  margin: 15% 0 0 0;
+  padding: 10px 30px 70px 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: 500px;
 }
 
-/* input::placeholder{
-    color: rgba(243, 238, 238, 0.959);
-} */
-
-button{
-    font-size: 18px;
-    width: 300px;
-    padding: 10px;
-    font-weight: bold;
-    border: none;
-    color: #6e55b9;
-    background-color: white;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    outline: 1px solid rgba(0, 0, 0, 0.295);
+.sign_up_header {
+    text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 5px;
+  color: #222;
 }
 
-p{
-    font-size: 14px;
-    color: rgb(15, 15, 15);
+.inputs {
+  display: grid;
+  grid-template-columns:1fr 1fr;
+column-gap: 10px;
+  row-gap: 10px;    
+  width: 100%;
+  place-content: center;
 }
 
-a{
-    font-size: 14px;
+.inputs input {
+  width: 100%;
+  padding: 13px;
+  border: 1.5px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
 }
 
-.icons{
-    display: flex;
-    gap: 10px;
-    padding: 5px;
-    margin-top: 5px;
+
+.inputs input:focus {
+  border-color: #4a90ff;
+  box-shadow: 0 0 6px rgba(74, 144, 255, 0.3);
 }
 
-.google{
-    border: 2px solid white;
-    padding: 10px;
-    width: 145px;
-    display: flex;
-    gap:5px;
-    justify-content: center;
-    background-color: white;
+/* ===== BUTTON ===== */
+.sign_up_button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  background: #4a90ff;
+  color: white;
+  border-radius: 10px;
+  margin: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
 }
 
-.apple{
-    background-color: white;
-    border: 2px solid white;
-    padding: 10px;
-    width: 145px;
-    display: flex;
-    gap:5px;
-    justify-content: center;
+.sign_up_button:hover {
+  background: #3577e7;
 }
 
-:is(.google,.apple):hover{
-    cursor: pointer;
-    outline: 1px solid black;
+/* ===== SIGN IN LINK ===== */
+.sign-in {
+  margin-top: 5px;
+  font-size: 14px;
 }
 
-.sign-in{
-    display: flex;
-    gap: 5px;
-    /* margin: 5px; */
+.sign-in a {
+  text-decoration: none;
+  color: #4a90ff;
+  font-weight: 600;
 }
 
-@media (width <= 600px){
-    img{
-        display: none;
-    }
+.sign-in a:hover {
+  text-decoration: underline;
+}
+
+/* ===== SOCIAL ICONS ===== */
+.icons {
+  margin-top: 5px;
+}
+
+.icons div {
+  padding: 12px;
+  border: 1.5px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icons div:hover {
+  background: #f3f6ff;
+  border-color: #4a90ff;
+}
+
+.google i {
+  font-size: 20px;
+}
+
+.apple i {
+  font-size: 20px;
 }

@@ -17,7 +17,7 @@ nav ul {
   }
 }
 
-.sign__up {
+.sign__in {
   border: none;
   background-color: #7772c5;
   padding: 15px;
@@ -27,7 +27,7 @@ nav ul {
       color: white;
 }
 
-.sign__in {
+.sign__up {
   padding: 13px;
   border: 2px solid #a09ebb;
   margin: 0 0 0 100px;

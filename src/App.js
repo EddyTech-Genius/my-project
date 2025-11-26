@@ -6,6 +6,8 @@ import Home from "./main/Home";
 import ProductDetail from "./main/ProductDetail";
 import Navbar from "./component/Navbar";
 import Contact from "./pages/Contact";
+import Signin from "./pages/Signin";
+import Signup from "./pages/Signup";
 import { all_product } from "./utilities/all-products";
 import Cart from "./pages/Cart";
 
@@ -32,6 +34,8 @@ function App() {
             }
           />
           <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/signup" element={<Signup />}></Route>
+          <Route path="/signin" element={<Signin />}></Route>
           <Route path="/cart" element={<Cart cartItems={cartItems} />}></Route>
         </Routes>
       </Router>
