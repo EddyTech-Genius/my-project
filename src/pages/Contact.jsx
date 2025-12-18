@@ -1,6 +1,3 @@
-import React from "react";
-import "../main/styles/contact.css";
-
 const Contact = () => {
   return (
     <section id="contact">

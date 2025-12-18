@@ -1,5 +1,4 @@
 import { useParams } from "react-router-dom";
-import "./styles/productdetail.css";
 
 function ProductDetail({ products, addToCart}) {
   const { id } = useParams();

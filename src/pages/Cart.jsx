@@ -1,5 +1,4 @@
-import "../main/styles/cart.css";
-import SpinnerSVG from "../component/SpinnerSVG";
+import SpinnerSVG from "../components/SpinnerSVG";
 import { useState } from "react";
 
 function Cart({ cartItems }) {
