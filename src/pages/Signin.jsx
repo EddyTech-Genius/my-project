@@ -37,7 +37,7 @@ const Signin = () => {
         />
         <br />
         <br />
-        <button>Submit query</button>
+        <button className="sign_in_button">Submit query</button>
         <br />
         <br />
         <input type="checkbox" id="checkbox1" name="checkbox1" />
