@@ -1,4 +1,14 @@
+/* ===== GENERAL PAGE LAYOUT ===== */
+/* body {
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f5f7fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
 
+/* ===== MAIN CONTAINER ===== */
 .sign_up_container {
   width: 520px;
   background: #ffffff;
