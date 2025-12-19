@@ -1,51 +1,53 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./styles/productlist.css"
+import "./styles/productlist.css";
 
-const ProductList = ({products, addToCart}) => {
-  const [filteredProducts, setFilteredProducts] = useState(products);
+const ProductList = ({ products, addToCart }) => {
+  const [filtered, setFiltered] = useState(products);
 
-  const handleFilter = (category) => {
-    if (category === "All") {
-      setFilteredProducts(products);
-    } else {
-      const filtered = products.filter(product => product.category === category);
-      setFilteredProducts(filtered);
-    }
+  const filterBy = (cat) => {
+    if (cat === "All") setFiltered(products);
+    else setFiltered(products.filter((p) => p.category === cat));
   };
 
-  const handleAddToCart = () => {
-    alert('Item added to cart!');
-  };
-
-  return (
-    <div>
-      <div className="filter-buttons">
-        <button onClick={() => handleFilter("All")}>All</button>
-        <button onClick={() => handleFilter("Men")}>Men</button>
-        <button onClick={() => handleFilter("Women")}>Women</button>
-        <button onClick={() => handleFilter("Shoes")}>Shoes</button>
+  return (<>
+    {/* <div className="promo">
+        <h2>Limited Time Offer</h2>
+        <p>
+          Up to <span>50% OFF</span>
+        </p>
+      </div> */}
+    <section className="shop">
+      
+      {/* CATEGORY ICONS */}
+      <div className="categories">
+        {["All", "Men", "Women", "Shoes"].map((cat) => (
+          <button key={cat} onClick={() => filterBy(cat)}>
+            {cat}
+          </button>
+        ))}
       </div>
 
-      <div className="container">
-        {filteredProducts.map(product => (
-            <div key={product.id} className="card">
-              <img src={`/assets/${product.image}`} alt={product.name} />
-              <h3>{product.name}</h3>
-              <div className="prices">
-                {/* <strike style={{ color: "red" }}>
-                  ${product.price + Math.floor(Math.random() * 50)}
-                </strike> */}
-                <p>${product.price}</p>
+      {/* PRODUCTS */}
+      <div className="products">
+        {filtered.map((product) => (
+          <div className="product-card" key={product.id}>
+            <img src={`/assets/${product.image}`} alt={product.name} />
+
+            <div className="info">
+              <h4>{product.name}</h4>
+              <p className="price">${product.price}</p>
+
+              <div className="actions">
+                <Link to={`/product/${product.id}`}>View</Link>
+                <button onClick={() => addToCart(product)}>Add</button>
               </div>
-              <Link style={{ textDecoration: 'none' }} to={`/product/${product.id}`}>
-                <p className="read_more">Read More</p>
-              </Link>
-              <p className="to_cart" onClick={() => {addToCart(product); handleAddToCart(product)}}>Add To Cart</p>
             </div>
-          ))}
+          </div>
+        ))}
       </div>
-    </div>
+    </section>
+    </>
   );
 };
 

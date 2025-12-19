@@ -7,17 +7,16 @@ const Navbar = ({ cartItems }) => {
     <div className='navbar'>
       <nav>
         <ul>
+          <div>
+            <h2 className='logo'><i>Ed's</i></h2>
+          </div>
+          <div className='after__logo'>
           <li>
             <Link to={'/'}>Home</Link>
           </li>
           <li>
             <Link to={'/contact'}>Contact</Link>
           </li>
-
-          <div className="input__container">
-            <input type="search" placeholder="Search" />
-            <i className="fa-solid fa-magnifying-glass"></i>
-          </div>
 
           <span>|</span>
 
@@ -33,6 +32,7 @@ const Navbar = ({ cartItems }) => {
               <p className='cart__quantity'>{cartItems.length}</p>
             </Link>
           </li>
+          </div>
         </ul>
       </nav>
     </div>

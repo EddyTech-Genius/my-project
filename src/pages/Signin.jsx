@@ -40,7 +40,7 @@ const Signin = () => {
         <button className="sign_in_button">Submit query</button>
         <br />
         <br />
-        <input type="checkbox" id="checkbox1" name="checkbox1" />
+        <input type="checkbox" id="checkbox" name="checkbox" />
         <label>
           I agree to the
           <span>  </span>

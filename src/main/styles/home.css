@@ -1,109 +1,101 @@
+/* Base Styles */
 body {
-  /*background-color: #A09EBB
-      #A8AEC1
-      #B5D2CB
-      #BFFFBc
-      #A6FFA1
-      #FFFFFF;*/
-  display: block;
-  overflow-x: hidden;
   font-family: "Poppins", sans-serif;
-  width: 100%;
-}
-
-* {
-  /* outline: 2px solid red; */
   margin: 0;
   padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  background: linear-gradient(135deg, #B5D2CB 0%, #A09EBB 100%);
+  color: #090630;
 }
 
+/* Reset all margins/paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Home Section */
 #home {
-  margin: auto;
   position: relative; 
   width: 100vw;
+  min-height: 70vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-height: 90dvh;
-  background-image: url("/public/assets/background.jpg");  background-repeat: no-repeat;
+  justify-content: flex-start;
+  padding: 0 100px;
+  background-image: url("/public/assets/background.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
-  background-color: #ffffff;
   background-position: center;
-  text-align: center;
-  p{
-    max-width: 350px;
-    text-align: center;
-    color: #a09ebb;
-    font-weight: 500;
-    z-index: 1;
-  }
+  text-align: left;
+  z-index: 1;
 }
-
 
 #home::after {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.15);
   z-index: 0;
-  opacity: 0.5;
+  height: 100%; 
+  background: linear-gradient(290deg, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 1) 90%);
+  pointer-events: none;
 }
 
+/* Heading */
 h1 {
-  font-size: 70px;
-  text-align: center;
+  font-size: clamp(2.5rem, 6vw, 4rem);
   max-width: 600px;
-  color: #a09ebb;
-  line-height: 65px;
-  margin-bottom: 20px;
+  line-height: 1.2;
+  color: #04021b;
+  margin-bottom: 25px;
   z-index: 1;
+  font-weight: 700;
+  text-shadow: 1px 2px 5px rgba(0,0,0,0.1);
 }
 
+/* Intro Button */
 .intro__button {
-  font-weight: bold;
+  font-weight: 600;
   font-family: "Inter", sans-serif;
-  padding: 10px;
-  width: 300px;
+  padding: 15px 40px;
+  width: auto;
   border: none;
+  border-radius: 50px;
   color: #ffffff;
-  background-color: #a09ebb;
+  background: linear-gradient(90deg, #04021b 0%, #090630 100%);
   z-index: 1;
-  margin: 20px 0 0 0;
+  margin-top: 20px;
+  box-shadow: 0px 8px 15px rgba(0,0,0,0.2);
+  transition: all 0.4s ease;
 }
 
 .intro__button:hover {
   cursor: pointer;
-  transform: translateY(-5px);
-  color: white;
-  transition: ease 0.5s;
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0px 12px 20px rgba(0,0,0,0.3);
 }
 
-input[type="search"] {
-  padding: 10px 10px 10px 30px;
-  background-color: white;
-  border-radius: 30px;
-  width: 23rem;
-  color: black;
-  font-family: "Poppins", sans-serif;
-  font-size: 15px;
-  border: 1px solid #a09ebb;
-}
-
-input[type="search"]:focus {
-  outline: none;
-  border: 3px solid #a09ebb;
-}
-
-.input__container {
+/* Wrapper for text & button */
+.home__wrapper {
   position: relative;
-  width: 250px;
+  z-index: 1;
+  max-width: 650px;
 }
 
-.input__container i {
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: gray;
+/* Optional: Smooth fade-in for home section */
+#home, h1, .intro__button {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

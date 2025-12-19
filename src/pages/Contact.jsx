@@ -29,24 +29,24 @@ const Contact = () => {
           <h3>Send a Message</h3>
           <p>Fill out the form below and we’ll respond as soon as possible.</p>
 
-          <form>
+          <form className=".contact__form">
             <div>
-              <label>First Name</label>
-              <input type="text" placeholder="John" />
+              <label className="contact__label">First Name</label>
+              <input className="contact__input" type="text" placeholder="John" />
             </div>
             <div>
-              <label>Last Name</label>
-              <input type="text" placeholder="Doe" />
+              <label className="contact__label">Last Name</label>
+              <input className="contact__input" type="text" placeholder="Doe" />
             </div>
             <div className="full">
-              <label>Email Address</label>
-              <input type="email" placeholder="john@example.com" />
+              <label className="contact__label">Email Address</label>
+              <input className="contact__input" type="email" placeholder="john@example.com" />
             </div>
             <div className="full">
-              <label>Message</label>
+              <label className=".contact__label">Message</label>
               <textarea placeholder="Write your message here..."></textarea>
             </div>
-            <button type="submit">Send Message</button>
+            <button type="submit" className="contact__button" >Send Message</button>
           </form>
         </div>
       </div>

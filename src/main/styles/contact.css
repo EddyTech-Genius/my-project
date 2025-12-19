@@ -98,17 +98,17 @@ body {
   margin-bottom: 35px;
 }
 
-form {
+.contact__form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 
-form .full {
+.contact__form .full {
   grid-column: 1 / -1;
 }
 
-label {
+.contact__label {
   font-size: 13px;
   font-weight: 500;
   margin-bottom: 6px;
@@ -116,7 +116,7 @@ label {
   color: var(--primary);
 }
 
-input,
+.contact__input,
 textarea {
   width: 100%;
   padding: 14px 16px;
@@ -127,7 +127,7 @@ textarea {
   background: #ffffff;
 }
 
-input:focus,
+.contact__input:focus,
 textarea:focus {
   outline: none;
   border-color: var(--secondary);
@@ -139,7 +139,7 @@ textarea {
   min-height: 130px;
 }
 
-button {
+.contact__button {
   grid-column: 1 / -1;
   margin-top: 10px;
   padding: 16px;
@@ -153,7 +153,7 @@ button {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-button:hover {
+.contact__button:hover {
   transform: translateY(-2px);
   box-shadow: 0 12px 25px rgba(37, 99, 235, 0.35);
 }

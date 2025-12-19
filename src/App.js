@@ -16,6 +16,7 @@ function App() {
 
   const addToCart = (product) => {
     setCartItems((prev) => [...prev, product]);
+    alert("Item added to cart");
   };
   
   return (
