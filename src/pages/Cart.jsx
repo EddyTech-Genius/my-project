@@ -74,7 +74,7 @@ function Cart({ cartItems }) {
           <h4>ORDER SUMMARY</h4>
           <div className="subtotal">
             <p>SUBTOTAL</p>
-            <p>{total}</p>
+            <p>${total*count}</p>
           </div>
           <div className="shipping">
             <p>SHIPPING</p>
@@ -82,7 +82,7 @@ function Cart({ cartItems }) {
           </div>
           <div className="total">
             <p>TOTAL</p>
-            <strong>${total + Math.floor(0.073 * total)}</strong>
+            <strong>${total*count + Math.floor(0.073 * total)}</strong>
           </div>
           <button className="checkout">CHECKOUT</button>
         </div>

@@ -44,7 +44,7 @@ span{
     color: #245CFB; 
 }
 
-button{
+.sign_in_button{
     padding: 15px;
     width: 100%;
     color: white;
@@ -55,7 +55,7 @@ button{
     border: none;
 }
 
-button:hover{
+.sign_in_button:hover{
     cursor: pointer;
 }
 
