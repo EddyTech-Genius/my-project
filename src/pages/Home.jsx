@@ -1,9 +1,4 @@
-import React from "react";
-import "./styles/home.css";
-import "./styles/contact.css";
-import "./styles/service.css";
 import ProductList from "./ProductList";
-// import { Link } from "react-router-dom";
 
 const Home = ({ products, addToCart }) => {
   return (
