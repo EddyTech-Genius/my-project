@@ -20,9 +20,10 @@ function Cart({ cartItems }) {
                 fontStyle: "italic",
                 position: "relative",
                 paddingLeft: -100,
-                paddingTop: 200,
+                paddingBottom: 100,
+                margin: "10px",
                 border: "none",
-                backgroundColor: "white",
+                backgroundColor: "none",
                 fontWeight: "bold",
                 fontSize: 18,
               }}

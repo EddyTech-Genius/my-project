@@ -1,4 +1,4 @@
-export default function SpinnerSVG({ size = 32, stroke = 3 }) {
+export default function SpinnerSVG({ size = 35, stroke = 3 }) {
   return (
     <svg
       width={size}
