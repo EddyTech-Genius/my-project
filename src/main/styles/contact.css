@@ -145,8 +145,8 @@ textarea {
   padding: 16px;
   border-radius: 14px;
   border: none;
-  background: linear-gradient(135deg, var(--secondary), var(--accent));
-  color: #ffffff;
+  background-color: rgb(110, 166, 250);
+  color: white;
   font-size: 15px;
   font-weight: 600;
   cursor: pointer;

@@ -33,8 +33,9 @@
 .products {
   display: grid;
   place-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  width: 100%;
+  column-gap: 2px;
 }
 
 /* CARD */
