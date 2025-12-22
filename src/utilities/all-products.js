@@ -155,7 +155,7 @@ export const all_product = [
     image: productImages[16],
     price: 45.0,
     description: "Stay warm with these stylish wool-lined boots. Durable soles and soft interiors make them perfect for cold days.",
-    sizes: [6, 7, 8, 9, 10, 11],
+    sizes: [6, 7, 8, 9, 10],
   },
   {
     id: 18,
@@ -164,7 +164,7 @@ export const all_product = [
     image: productImages[17],
     price: 70.0,
     description: "Designed for elegance and comfort, these dress shoes complete your formal look with polished detail.",
-    sizes: [6, 7, 8, 9, 10, 11],
+    sizes: [6, 7, 8, 9, 10],
   },
   {
     id: 19,
@@ -173,7 +173,7 @@ export const all_product = [
     image: productImages[18],
     price: 25.0,
     description: "These sneakers offer lightweight support and breathability, great for workouts or casual wear.",
-    sizes: [6, 7, 8, 9, 10, 11],
+    sizes: [6 , 7, 8, 9, 10],
   },
   {
     id: 20,
@@ -182,7 +182,7 @@ export const all_product = [
     image: productImages[19],
     price: 90.0,
     description: "Step out in style with these silk heels. Elegant and smooth, they’re perfect for special occasions.",
-    sizes: [6, 7, 8, 9, 10, 11],
+    sizes: [6 , 7, 8, 9, 10],
   },
   {
     id: 21,
@@ -191,7 +191,7 @@ export const all_product = [
     image: productImages[20],
     price: 65.0,
     description: "These wool knit slides are cozy and convenient. Slip them on for instant comfort wherever you go.",
-    sizes: [6, 7, 8, 9, 10, 11],
+    sizes: [6 , 7, 8, 9, 10],
   },
 ]   ;
 

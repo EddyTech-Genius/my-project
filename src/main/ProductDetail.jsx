@@ -32,19 +32,19 @@ function ProductDetail({ products, addToCart}) {
 
         <div className="button_sizes_container">
           <button className="size_buttons">
-            {product.sizes.toString().slice(0, 2)}
+            {product.sizes[0]}
           </button>
           <button className="size_buttons">
-            {product.sizes.toString().slice(3, 4)}
+            {product.sizes[1]}
           </button>
           <button className="size_buttons">
-            {product.sizes.toString().slice(5, 6)}
+            {product.sizes[2]}
           </button>
           <button className="size_buttons">
-            {product.sizes.toString().slice(7, 8)}
+            {product.sizes[3]}
           </button>
           <button className="size_buttons">
-            {product.sizes.toString().slice(9, 11)}
+            {product.sizes[4]}
           </button>
         </div>
 
